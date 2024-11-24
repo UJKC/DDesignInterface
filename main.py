@@ -3,7 +3,7 @@ import os
 import ctypes
 import subprocess
 import tkinter as tk
-from tkinterdnd2 import TkinterDnD, DND_FILES
+from tkinterdnd2 import TkinterDnD
 from tkinter import filedialog
 import xml.etree.ElementTree as ET
 
