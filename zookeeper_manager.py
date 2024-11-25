@@ -23,18 +23,6 @@ class ZookeeperManager:
             self.stop_button.pack(pady=10)
             self.stop_button.config(state=tk.DISABLED)
 
-    def clone_repository(self, root):
-        """ Clone the repository if the conditions are met in the current working directory """
-        repo_url = "https://github.com/UJKC/DDResouces.git"
-        current_dir = os.getcwd()
-
-        try:
-            subprocess.run(["git", "clone", repo_url], cwd=current_dir, check=True)
-            self.text_box.insert(tk.END, f"Repository cloned to: {current_dir}")
-            self.update_zoo_cfg(root)
-        except subprocess.CalledProcessError as e:
-            self.text_box.insert(tk.END, f"Error cloning repository: {e}")
-
     def update_zoo_cfg(self, root):
         """ Update the zoo.cfg file with the provided values """
         try:

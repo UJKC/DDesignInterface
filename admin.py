@@ -1,4 +1,5 @@
 import ctypes
+import tkinter as tk
 
 def is_admin():
     """ Check if the script is running with administrator privileges """

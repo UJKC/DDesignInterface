@@ -1,5 +1,6 @@
 import os
 import subprocess
+import tkinter as tk
 
 def set_java_home():
     """ Set the JAVA_HOME environment variable permanently """

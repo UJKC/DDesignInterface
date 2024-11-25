@@ -3,6 +3,7 @@ import os
 from admin import is_admin, run_as_admin
 from environment import set_java_home
 from xml_reader_app import XMLReaderApp
+import tkinter as tk
 
 if __name__ == "__main__":
     if not is_admin():
